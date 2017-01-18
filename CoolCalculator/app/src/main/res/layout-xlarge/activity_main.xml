@@ -8,21 +8,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.orkun.coolcalculator.MainActivity">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonEqual"
-        android:src="@drawable/equal"
-        tools:ignore="ContentDescription"
-        android:background="#00ffffff"
-        android:visibility="visible"
-        android:elevation="1dp"
-        android:paddingTop="110dp"
-        android:paddingRight="6dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:paddingLeft="6dp" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -208,46 +193,59 @@
             android:layout_height="87dp"
             android:background="@android:color/white">
 
-            <RelativeLayout
-                android:layout_width="0dp"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="180dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:elevation="0dp">
+                android:elevation="1dp"
+                android:gravity="center">
 
                 <Button
                     android:text="@string/sifirla"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button44"
-                    android:textSize="30sp"
-                    android:textColor="@android:color/black"
-                    android:background="#00ffffff"
+                    android:id="@+id/button10"
+                    android:textSize="24sp"
                     android:layout_width="150dp"
-                    android:elevation="0dp" />
-            </RelativeLayout>
+                    android:background="#36c7ca" />
+            </LinearLayout>
 
             <Button
-                android:text="@string/_3"
-                android:layout_width="match_parent"
+                android:text="@string/_0"
                 android:layout_height="match_parent"
-                android:id="@+id/button34"
+                android:id="@+id/button0"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
                 android:background="#00ffffff"
-                android:layout_weight="1" />
+                android:layout_width="90dp" />
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/imageButtonAdd"
+                android:layout_weight="1"
                 android:background="#00ffffff"
                 tools:ignore="ContentDescription"
-                android:src="@drawable/add"
-                android:layout_weight="1"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:src="@drawable/add" />
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonEqual"
+        android:src="@drawable/equal"
+        tools:ignore="ContentDescription"
+        android:background="#00ffffff"
+        android:visibility="visible"
+        android:elevation="1dp"
+        android:paddingTop="110dp"
+        android:paddingRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="6dp" />
 
 </RelativeLayout>
