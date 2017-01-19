@@ -8,21 +8,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.orkun.coolcalculator.MainActivity">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonEqual"
-        android:src="@drawable/equal"
-        tools:ignore="ContentDescription"
-        android:background="#00ffffff"
-        android:visibility="visible"
-        android:elevation="1dp"
-        android:paddingTop="110dp"
-        android:paddingRight="6dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:paddingLeft="6dp" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -41,15 +26,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
+                android:id="@+id/ResultTextView"
                 android:textSize="45sp"
                 android:textColor="@android:color/background_light"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="50dp"
                 android:gravity="end"
-                android:layout_gravity="end"
-                android:text="567" />
+                android:layout_gravity="end" />
 
         </LinearLayout>
 
@@ -64,7 +48,7 @@
                 android:text="@string/_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button7"
+                android:id="@+id/buttonSeven"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -74,7 +58,7 @@
                 android:text="@string/_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button8"
+                android:id="@+id/buttonEight"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -84,7 +68,7 @@
                 android:text="@string/_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button9"
+                android:id="@+id/buttonNine"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -114,7 +98,7 @@
                 android:text="@string/_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button4"
+                android:id="@+id/buttonFour"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -124,7 +108,7 @@
                 android:text="@string/_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button5"
+                android:id="@+id/buttonFive"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -134,7 +118,7 @@
                 android:text="@string/_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button6"
+                android:id="@+id/buttonSix"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -164,7 +148,7 @@
                 android:text="@string/_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button1"
+                android:id="@+id/buttonOne"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -174,7 +158,7 @@
                 android:text="@string/_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button2"
+                android:id="@+id/buttonTwo"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -184,7 +168,7 @@
                 android:text="@string/_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button3"
+                android:id="@+id/buttonThree"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
@@ -208,46 +192,59 @@
             android:layout_height="87dp"
             android:background="@android:color/white">
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:elevation="0dp">
+            <RelativeLayout android:layout_height="match_parent"
+                android:layout_width="181dp"
+                android:gravity="center"
+                android:layout_gravity="center">
 
                 <Button
                     android:text="@string/sifirla"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button44"
+                    android:id="@+id/buttonClear"
                     android:textSize="30sp"
-                    android:textColor="@android:color/black"
-                    android:background="#00ffffff"
-                    android:layout_width="150dp"
-                    android:elevation="0dp" />
+                    android:textColor="@android:color/white"
+                    android:background="#37c7ca"
+                    android:layout_width="150dp" />
+
             </RelativeLayout>
 
             <Button
-                android:text="@string/_3"
-                android:layout_width="match_parent"
+                android:text="@string/_0"
                 android:layout_height="match_parent"
-                android:id="@+id/button34"
+                android:id="@+id/buttonZero"
                 android:textSize="30sp"
                 android:textColor="@android:color/black"
                 android:background="#00ffffff"
-                android:layout_weight="1" />
+                android:layout_width="89.5dp" />
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/imageButtonAdd"
+                android:layout_weight="2"
                 android:background="#00ffffff"
                 tools:ignore="ContentDescription"
-                android:src="@drawable/add"
-                android:layout_weight="1"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:src="@drawable/add" />
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonCalculate"
+        android:src="@drawable/equal"
+        tools:ignore="ContentDescription"
+        android:background="#00ffffff"
+        android:visibility="visible"
+        android:elevation="1dp"
+        android:paddingTop="110dp"
+        android:paddingRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="6dp" />
 
 </RelativeLayout>
